@@ -20,13 +20,16 @@ public class Gaulois {
 		return this.force;
 	}
 	
-	public void parler(String texte) {
-        System.out.println("Le gaulois " + nom + " : « " + texte + " ».");
+	public void parler(String text) {
+        System.out.println("Le Gaulois"+nom +" : « "+ text +"»");
     }
 	
-	public static void main(String[] args) {
-	    Gaulois gaulois = new Gaulois("Astérix", 8);
-	    gaulois.parler("Bonjour à tous");
+	public void frapper (Romain romain) {
+		
+		System.out.println(this.nom + " envoie un grand coup dans la mâchoire de " + romain.getNom() );
+		int coup = this.force / 3;
+		romain.recevoirCoup(coup);
 	}
+	
 }
-
+       
