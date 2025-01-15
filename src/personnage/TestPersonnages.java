@@ -9,6 +9,14 @@ public class TestPersonnages {
 	    romain.parler("UN GAU… UN GAUGAU…");
 	    for (int i = 0; i < 3; i++) {
 	    	gaulois.frapper(romain);
+	    	if(romain.getForce()==0) {
+	    		break;
+	    		
+	    	}
+	    	romain.frapper(gaulois);
+	    	if(gaulois.getForce()==0) {
+	    		break;
+	    	}
         }
 	}
 }
