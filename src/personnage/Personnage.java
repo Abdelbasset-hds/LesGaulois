@@ -20,13 +20,13 @@ public abstract class Personnage {
 	}
 	
 	public void parler (String text) {
-		System.out.println(this.nom + nom + " : « " + text + " ».");
+		System.out.println(this.nom + nom + " :  " + text + " .");
 	}
 	
 
     public void frapper (Personnage adv) {
 		
-		System.out.println(donnerAuteur() + " envoie un grand coup dans la mâchoire de " + adv.getNom() );
+		System.out.println(donnerAuteur() + " envoie un grand coup dans la machoire de " + adv.getNom() );
 		int coup = this.force / 3;
 		adv.recevoirCoup(coup);
 	}
@@ -41,11 +41,11 @@ public abstract class Personnage {
 		}
 		
 		if (this.force>0) {
-			System.out.println("Aïe !");
+			System.out.println("Aie !");
 		}
 		
 		else {
-			System.out.println("J’abandonne…");
+			System.out.println("J'abandonne ");
 			
 		}}
 }
