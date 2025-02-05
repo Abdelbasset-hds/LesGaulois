@@ -9,11 +9,12 @@ public class Village {
 	private Gaulois chef;
 	private Gaulois[] habitant;
 	private int conteur = 0;
+	private static int max_habitant = 4;
 	
 	public Village(Gaulois chef) {
 		this.nom = nom;
 		this.chef = chef;
-		this.habitant = new Gaulois[50];
+		this.habitant = new Gaulois[max_habitant];
 	}
    
     public String getNom() {
@@ -23,13 +24,20 @@ public class Village {
     	return chef;
     }
     public void ajouterVillageois(Gaulois gaulois) {
+    	if(conteur<max_habitant) {
     	habitant[conteur]=gaulois;
     	conteur++;
+    	System.out.println(chef.getNom()+ " Bienvenue " +gaulois.getNom()+" !");
+    	}
+    	else {
+    		System.out.println(chef.getNom()+ " Désolé " +gaulois.getNom()+ " mon village est déja bien rempli");
+    	}
+    	
     	
     }
     
     public void afficherVillageois() {
-    	System.out.println("le village de "+ getChef() + "habit par : ");
+    	System.out.println("le village de "+ chef.getNom() + " habit par : ");
     	for(int i=0;i<conteur;i++) {
     		System.out.println("-"+habitant[i].getNom());
     	}

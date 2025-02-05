@@ -6,6 +6,7 @@ public abstract class Personnage {
 	private int force;
 	
 	
+	
 	public Personnage (String nom,int force) {
 		this.nom = nom;
 		this.force = force;
@@ -20,7 +21,7 @@ public abstract class Personnage {
 	}
 	
 	public void parler (String text) {
-		System.out.println(this.nom + nom + " :  " + text + " .");
+		System.out.println(this.nom  + " :  " + text + " .");
 	}
 	
 
@@ -33,8 +34,9 @@ public abstract class Personnage {
     
 	protected abstract String donnerAuteur();
 
-    
-    public void recevoirCoup(int coup) {
+
+	
+    public void recevoirCoup(double coup) {
 		this.force -= coup;
 		if (this.force<0) {
 			this.force = 0;
@@ -45,7 +47,7 @@ public abstract class Personnage {
 		}
 		
 		else {
-			System.out.println("J'abandonne ");
+			System.out.println(getNom()+" : J'abandonne ");
 			
 		}}
 }
