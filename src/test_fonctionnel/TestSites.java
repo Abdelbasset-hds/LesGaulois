@@ -11,9 +11,9 @@ public class TestSites {
 
     public static void main(String[] args) {
        
-    	Gaulois Vercingétorix = new Gaulois("Vercingétorix",5);
-    	Village village = new Village(Vercingétorix);
-    	Vercingétorix.parler(" Je suis un grand guerrier et je vais cr�er mon village");
+    	Gaulois Vercingactorix = new Gaulois("Vercingétorix",5);
+    	Village village = new Village(Vercingactorix);
+    	Vercingactorix.parler(" Je suis un grand guerrier et je vais cr�er mon village");
     	
     	Soldat minus = new Soldat("Minus",2,Soldat.Grade.SOLDAT);   	
     	Camp camp =new Camp(minus);
@@ -21,7 +21,7 @@ public class TestSites {
     	
     	Gaulois  Agecanonix = new Gaulois(" Agecanonix",1);
     	Gaulois Assurancetourix = new Gaulois("Assurancetourix",2);
-    	Gaulois Astérix = new Gaulois("Astérix",5);
+    	Gaulois Astacrix = new Gaulois("Astérix",5);
     	Gaulois Obelix = new Gaulois("Obelix",15);
     	Gaulois Prolix = new Gaulois("Prolix",2);
     	
@@ -39,7 +39,7 @@ public class TestSites {
         
     	village.ajouterVillageois(Agecanonix);
     	village.ajouterVillageois(Assurancetourix);
-    	village.ajouterVillageois(Astérix);
+    	village.ajouterVillageois(Astacrix);
         village.ajouterVillageois(Obelix);
         village.ajouterVillageois(Prolix);
         

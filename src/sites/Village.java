@@ -30,7 +30,7 @@ public class Village {
     	System.out.println(chef.getNom()+ " Bienvenue " +gaulois.getNom()+" !");
     	}
     	else {
-    		System.out.println(chef.getNom()+ " Désolé " +gaulois.getNom()+ " mon village est déja bien rempli");
+    		System.out.println(chef.getNom()+ " Desole " +gaulois.getNom()+ " mon village est déja bien rempli");
     	}
     	
     	

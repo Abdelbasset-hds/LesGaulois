@@ -33,12 +33,12 @@ public class Camp {
     	System.out.println(soldat.getNom() + " Je mets mon épée au service de Rome dans le camp dirigé par Minus");
     	}
     	else {
-    		System.out.println(commandant.getNom()+ " Désolé " +soldat.getNom()+ " notre camp est complet !");
+    		System.out.println(commandant.getNom()+ " Desole " +soldat.getNom()+ " notre camp est complet !");
     	}
     }
     
     public void afficherCamp() {
-        System.out.println("Le camp dirigé par " + commandant.getNom() + " contient les soldats :");
+        System.out.println("Le camp dirige par " + commandant.getNom() + " contient les soldats :");
 
         for (int j = 0; j < i; j++) {
             System.out.println("- " + habitant[j].getNom());
@@ -57,7 +57,7 @@ public class Camp {
     	
     	}
     	else {
-    		System.out.println(nouveauCommandant.getNom()+" : Je ne suis pas suffisamment gradé pour prendre la direction du camp Romain");
+    		System.out.println(nouveauCommandant.getNom()+" : Je ne suis pas suffisamment grade pour prendre la direction du camp Romain");
     	}
 
     }

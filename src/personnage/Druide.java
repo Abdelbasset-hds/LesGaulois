@@ -20,12 +20,12 @@ public class Druide extends Gaulois{
 	public void fabriquerPotion() {
 		quantite_potion = random.nextInt(5) + 1;
 		puissance_potion = random.nextInt(5)+2;
-		System.out.println("Le gaulois " + getNom() +" :  J'ai concocté "+quantite_potion+" doses de potion magique. Elle a une force de "+puissance_potion+".");
+		System.out.println("Le gaulois " + getNom() +" :  J'ai concocte "+quantite_potion+" doses de potion magique. Elle a une force de "+puissance_potion+".");
 	}
 	
 	public void boosterGaulois(Gaulois g) {
-		if (g.getNom().equals("Obélix")) {
-			 System.out.println("Le gaulois " + getNom() + " : Non, Obélix Non !... Et tu le sais très bien !");
+		if (g.getNom().equals("Obelix")) {
+			 System.out.println("Le gaulois " + getNom() + " : Non, Obelix Non !... Et tu le sais très bien !");
 	            return;
 		}
 		if (quantite_potion > 0) {
@@ -34,7 +34,7 @@ public class Druide extends Gaulois{
 			System.out.println("le Gaulois " + getNom() + " : Tiens "+g.getNom()+" un peu de potion magique.");
 			}
 		else {
-			System.out.println("Le gaulois " + getNom() + " : Désolé "+g.getNom()+" il n'y a plus une seule goutte de potion.");
+			System.out.println("Le gaulois " + getNom() + " : Desole "+g.getNom()+" il n'y a plus une seule goutte de potion.");
 		}
 	}
 

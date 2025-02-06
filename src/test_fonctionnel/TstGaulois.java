@@ -13,7 +13,7 @@ public class TstGaulois {
 		
 		
 		Gaulois asterix =  new Gaulois("Asterix", 8);
-		Gaulois Obélix =  new Gaulois("Obélix", 8);
+		Gaulois Obelix =  new Gaulois("Obelix", 8);
 		Gaulois Assurancetourix =  new Gaulois("Assurancetourix", 8);
 		Gaulois Agecanonix =  new Gaulois("Agecanonix", 8);
 	    Druide Panoramix = new Druide("Panoramix",8);
@@ -23,12 +23,12 @@ public class TstGaulois {
 	    minus.equiper(Soldat.Equipement.BOUCLIER);
 	
 	    Panoramix.fabriquerPotion();
-	    Panoramix.boosterGaulois(Obélix);
+	    Panoramix.boosterGaulois(Obelix);
 	    Panoramix.boosterGaulois(asterix);
 	    Panoramix.boosterGaulois(Assurancetourix);
 	    Panoramix.boosterGaulois(Agecanonix);
 	    
-	    asterix.parler("Bonjour à tous");
+	    asterix.parler("Bonjour a� tous");
 	    minus.parler("UN GAU! UN GAUGAU!");
 	    asterix.frapper(minus);
 	    //while (true) {

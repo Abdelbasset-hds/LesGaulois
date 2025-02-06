@@ -20,7 +20,7 @@ public class Soldat extends Romain {
 	public void equiper(Equipement e) {
 		for(int i=0;i<nbequipement;i++) {
 			if(equipements[i]==e) {
-				System.out.println(getNom() +" : je suis déja equiper avec "+ e);
+				System.out.println(getNom() +" : je suis deja equiper avec "+ e);
 				return;
 			}
 			
@@ -28,7 +28,7 @@ public class Soldat extends Romain {
 		if(nbequipement<3) {
 			equipements[nbequipement]=e;
 			nbequipement++;
-			System.out.println("Le "+getGrade() +" "+ getNom()  + " s'équipe avec un " + e);
+			System.out.println("Le "+getGrade() +" "+ getNom()  + " s'equipe avec un " + e);
 		}
 	}
 	
